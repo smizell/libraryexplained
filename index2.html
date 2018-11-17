@@ -19,14 +19,6 @@ layout: none
   <meta property="og:image" content="https://mediad.publicbroadcasting.net/p/wkms/files/styles/x_large/public/201808/IMG_9216.JPG">
   <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
   <style>
-    .lst-square {
-      list-style-type: square;
-    }
-
-    .mcopy {
-      font-family: garamond, Georgia, 'Times New Roman', Times, serif;
-    }
-
     a {
       color: #0074D9;
       text-decoration: none;
@@ -44,22 +36,35 @@ layout: none
       opacity: .8;
       transition: opacity .15s ease-out;
     }
+
+    .lst-square {
+      list-style-type: square;
+    }
+
+    .mcopy {
+      font-family: garamond, Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #meetings a {
+      text-decoration: underline;
+      color: #fff;
+    }
   </style>
 </head>
 
 <body class="sans-serif">
-  <header class="pr4 pb4 pl4 sans-serif mb5 bb b--black-20">
+  <header class="pr4 pb4 pl4 sans-serif bb b--black-20">
     <div class="mw7-ns">
       <h1 class="f2 black-90">
         Calloway County Public Library Expansion
       </h1>
       <nav class="nowrap mw9 center">
-        <a class="f4 pb2-ns mr2 mr3-m mr4-l" href="" title="Timeline">Timeline</a>
-        <a class="f4 pb2-ns mr2 mr3-m mr4-l" href="" title="FAQ">FAQ</a>
-        <a class="f4 pb2-ns mr2 mr3-m mr4-l" href="" title="Meetings">Meetings</a>
-        <a class="f4 pb2-ns mr2 mr3-m mr4-l" href="" title="About">About</a>
+        <a class="f4 pb2-ns mr2 mr3-m mr4-l" href="#timeline" title="Timeline">Timeline</a>
+        <a class="f4 pb2-ns mr2 mr3-m mr4-l" href="#faq" title="FAQ">FAQ</a>
+        <a class="f4 pb2-ns mr2 mr3-m mr4-l" href="#meetings" title="Meetings">Meetings</a>
+        <a class="f4 pb2-ns mr2 mr3-m mr4-l" href="#about" title="About">About</a>
       </nav>
-      <p class="sans-serif lh-copy f3 measure black-90">
+      <p class="sans-serif mb0 lh-copy f3 measure black-90">
         The library board approved a necessary expansion in 2016, but three
         newly-appointed board members have been working to prevent it from&nbsp;happening.
       </p>
@@ -67,16 +72,12 @@ layout: none
   </header>
 
   <main>
-    <section class="timeline pl4 pr4">
+    <section class="pl4 pr4" id="timeline">
       <div class="mw7-ns">
-        <div class="site-description dn mb4 lh-copy f4 black-80">
-          <p>
-            The current Calloway County Public Library (CCPL) building is
-            underserving the residents of Calloway County in ways that an
-            expansion would alleviate. Public support for the library has not
-            wavered, though. Program attendance has seen a
-            <strong>20% increase</strong> since 2015.
-          </p>
+        <h2 class="sans-serif f2">Timeline</h2>
+
+        <div class="dn mb4 lh-copy f4 black-80">
+
           <p>
             The following timeline was created to show when the expansion planning
             started, and what progress has been made in order to give the
@@ -92,12 +93,10 @@ layout: none
         -->
         </div>
 
-        <h2 class="sans-serif f2">Timeline</h2>
-
         <div class="time-frame mb5">
-          <div class="sans-serif light-silver f4">1969-1976</div>
-          <h1 class="sans-serif mt1 mb2">Calloway County Builds a Public Library</h1>
-          <div class="lh-copy f4 black-80">
+          <div class="time-range sans-serif light-silver f4">1969-1976</div>
+          <h1 class="time-range-title sans-serif mt1 mb2">Calloway County Builds a Public Library</h1>
+          <div class="time-range-desc lh-copy f4 black-80">
             <div class="fr ml4 w-40">
               <img class="db" src="https://mediad.publicbroadcasting.net/p/wkms/files/styles/x_large/public/201808/IMG_9216.JPG" />
               <figcaption class="db tr f5">Calloway County Public Library</figcaption>
@@ -227,6 +226,51 @@ layout: none
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="pa4 bt b--black-20" id="faq">
+      <div class="mw7-ns">
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="question">
+          <h3>Q: Why do we need an expansion?</h3>
+          <div class="lh-copy">
+            <p>
+              The current Calloway County Public Library (CCPL) building is
+              underserving the residents of Calloway County in ways that an
+              expansion would alleviate. Public support for the library has not
+              wavered, though. Program attendance has seen a
+              <strong>20% increase</strong> since 2015.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pa4 bg-dark-blue near-white" id="meetings">
+      <div class="mw7-ns">
+        <h2>Meetings</h2>
+        <p class="lh-copy">
+          It's important that the community is able to see and hear about what
+          is going on during the board meetings. These meetings are open to the
+          public. Below are recordings by community members from recent board meetings.
+        </p>
+
+        <ul class="lst-square lh-copy">
+          <li><a href="https://www.youtube.com/watch?v=UjdUWGVcG20">June 2018</a></li>
+          <li><a href="https://www.youtube.com/watch?v=PWWSfEnj2PU">September 2018</a></li>
+          <li><a href="https://www.youtube.com/watch?v=pXHfV7O7NhE">November 2018</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pa4 bg-black-90 near-white" id="about">
+      <div class="mw7-ns">
+        <h2>About this site</h2>
+        <p class="lh-copy">
+          This site was create by community members who love the library and
+          want to see it thrive.
+        </p>
       </div>
     </section>
   </main>
